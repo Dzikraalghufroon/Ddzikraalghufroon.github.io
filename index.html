@@ -7,8 +7,17 @@
   <title>Jikupon</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+      <script>
+        // Fungsi untuk mengalihkan ke halaman lain setelah 4 detik
+        function redirect() {
+            setTimeout(function() {
+                window.location.href = "https://khayra-amanda.github.io/"; // Ganti dengan URL tujuan
+            }, 4000); // 4000 ms = 4 detik
+        }
+      
+    </script>
 
-<body>
+<body onload="redirect()">
   <div class="navbar">
   <img class="foto" src="sikurcbt/image copy 3.png" alt="">
   <header>
@@ -17,9 +26,9 @@
 
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="tentang/">Profil</a></li>
-          <li><a href="sikurcbt/">Sikur CBT</a></li>
-          <li><a href="https://github.com/Dzikraalghufroon/">github</a></li>
+          <li><a href="#tentang/">Profil</a></li>
+          <li><a href="#sikurcbt/">Sikur CBT</a></li>
+          <li><a href="#https://github.com/Dzikraalghufroon/">github</a></li>
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
@@ -49,10 +58,10 @@
         <h1></h1>
 
         
-        <a class="button" href="https://www.facebook.com/profile.php?id=61557983045289"> facebook</a>
+        <a class="button" href="#https://www.facebook.com/profile.php?id=61557983045289"> facebook</a>
         <br><br>
 
-        <a class="button2" href="https://www.instagram.com/jikupon/"> instagram</a>
+        <a class="button2" href="#https://www.instagram.com/jikupon/"> instagram</a>
 
       </div>
     </section>
@@ -65,14 +74,6 @@
     </div>
   </footer>
 </body>
-    <script>
-        // Fungsi untuk mengalihkan ke halaman lain setelah 4 detik
-        function redirect() {
-            setTimeout(function() {
-                window.location.href = "https://khayra-amanda.github.io/"; // Ganti dengan URL tujuan
-            }, 4000); // 4000 ms = 4 detik
-        }
-      
-    </script>
+
 
 </html>
