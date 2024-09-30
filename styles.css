@@ -7,31 +7,31 @@
 /* .navbar{
     position: fixed;
 } */
+.navbar {
+    position: -webkit-sticky; /* Untuk browser yang mendukung Webkit */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Agar navbar selalu berada di atas elemen lainnya */
+}
+
 header {
-    background: linear-gradient(to bottom, #001069, #246aeb,#0c3177);
+    background: linear-gradient(to bottom, #001069, #246aeb, #0c3177);
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: -20px;
-    position: sticky;
-    /* background-image: url(/web/image\ copy\ 3.png); */
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 2.5em;
+    padding: 10px 0; /* Tambahan padding agar konten tidak terlalu dekat dengan tepi */
 }
 
 nav ul {
     list-style: none;
     padding: 8px 0;
-    margin: 0px 0 0;
+    margin: 0;
     display: flex;
-
+    justify-content: space-around; /* Agar elemen dalam navbar tersebar merata */
 }
 
 nav ul li {
-    margin: 0px;    
+    margin: 0;
 }
 
 nav ul li a {
@@ -39,11 +39,11 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 0.8em;
-    padding: 10px 40px;
+    padding: 20px 40px;
     box-shadow: 0 0px 3px 3px #0a68c7;
-    background: linear-gradient(to bottom,#041574, #3786d4, #032568);
-    transition: color 0.3s;
-    margin: 0px;
+    background: linear-gradient(to bottom, #041574, #3786d4, #032568);
+    transition: color 0.3s, transform 0.3s;
+    margin: 0;
     border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
 }
@@ -131,6 +131,9 @@ footer {
 .foto11{
     max-width: 20pc;
     max-height:20pc;
+}
+.foto{
+    max-width: 100%;
 }
 @media (max-width: 768px){
     .foto{
